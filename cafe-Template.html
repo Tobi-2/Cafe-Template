@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="Style/cafe-Template.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="nav-bar-container">
+      <div class="nav-bar-content">
+        <div class="nav-bar-item">
+          <a href="#" class="nav-bar-button">HOME</a>
+        </div>
+        <div class="nav-bar-item">
+          <a href="#about" class="nav-bar-button">ABOUT</a>
+        </div>
+        <div class="nav-bar-item">
+          <a href="#menu" class="nav-bar-button">MENU</a>
+        </div>
+        <div class="nav-bar-item">
+          <a href="#where" class="nav-bar-button">WHERE</a>
+        </div>
+      </div>
+    </div>
+
+    <header class="home">
+      <div class="home-left">
+        <span class="home-tag">Open from 6am to 5pm</span>
+      </div>
+      <div class="home-middle">
+        <span class="middle-home" style="font-size: 90px;">the<br>Cafe</span>
+      </div>
+      <div class="home-right">
+        <span class="middle-home">15 Adr street, 5015</span>
+      </div>
+    </header>
+
+    <div class="cafe-background">
+      <div class="cafe-contianer" id="about">
+        <div class="cafe-contents" style="max-width: 700px;">
+          <h5 class="cafe-header">
+            <span class="cafe-header-content">ABOUT THE CAFE</span>
+          </h5>
+          <p>
+            The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <p>
+            In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.
+          </p>
+          <div class="cafe-comment">
+            <p>
+              <i>
+                "Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.
+              </i>
+            </p>
+            <p>
+              Chef, Coffeeist and Owner: Liam Brown
+            </p>
+          </div>
+          <img src="Images/coffeeshop.jpg" style="width:100%;max-width:1000px">
+          <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+          <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
+        </div>
+      </div>
+
+      <div class="cafe-contianer" id="menu">
+        <div class="cafe-contents"    
+          style="max-width: 700px;">
+          <h5 class="cafe-header">
+            <span class="cafe-header-content">
+              THE MENU
+            </span>
+          </h5>
+          <div class="menu-tab">
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');">
+              <div class="menu-items menu-bg">
+                Eat
+              </div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Drink');">
+              <div class="menu-items">
+                Drink
+              </div>
+            </a>
+          </div>
+          
+          <div id="Eat" 
+            class="container eat-items" style="display: block;">
+            <h5>Bread Basket</h5>
+            <p class="eat-option">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+            <h5>Honey Almond Granola with Fruits</h5>
+            <p class="eat-option">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+            <h5>Belgian Waffle</h5>
+            <p class="eat-option">Vanilla flavored batter with malted flour 7.50</p><br>
+            <h5>Scrambled eggs</h5>
+            <p class="eat-option">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+            <h5>Blueberry Pancakes</h5>
+            <p class="eat-option">With syrup, butter and lots of berries 8.50</p>
+          </div>
+          
+          <div id="Drink" 
+            class="container eat-items" style="display: none;">
+            <h5>Coffee</h5>
+            <p class="eat-option">Regular coffee 2.50</p><br>
+            <h5>Chocolato</h5>
+            <p class="eat-option">Chocolate espresso with milk 4.50</p><br>
+            <h5>Corretto</h5>
+            <p class="eat-option">Whiskey and coffee 5.00</p><br>
+            <h5>Iced tea</h5>
+            <p class="eat-option">Hot tea, except not hot 3.00</p><br>
+            <h5>Soda</h5>
+            <p class="eat-option">Coke, Sprite, Fanta, etc. 2.50</p>
+          </div>
+          <!--
+          <div class="menu-tab">
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+              <div class="menu-items menu-bg">Eat</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Drink');">
+              <div class="menu-items2">Drink</div>
+            </a>
+          </div>
+
+          <div id="Eat" class="container eat-items" style="display: block;">
+            <h5>Bread Basket</h5>
+            <p class="eat-option">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+          
+            <h5>Honey Almond Granola with Fruits</h5>
+            <p class="eat-option">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+          
+            <h5>Belgian Waffle</h5>
+            <p class="eat-option">Vanilla flavored batter with malted flour 7.50</p><br>
+          
+            <h5>Scrambled eggs</h5>
+            <p class="eat-option">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+          
+            <h5>Blueberry Pancakes</h5>
+            <p class="eat-option">With syrup, butter and lots of berries 8.50</p>
+          </div>
+
+          <div id="Drink" class="container eat-items" style="display: none;">
+            <h5>Coffee</h5>
+            <p class="eat-option">Regular coffee 2.50</p><br>
+          
+            <h5>Chocolato</h5>
+            <p class="eat-option">Chocolate espresso with milk 4.50</p><br>
+          
+            <h5>Corretto</h5>
+            <p class="eat-option">Whiskey and coffee 5.00</p><br>
+          
+            <h5>Iced tea</h5>
+            <p class="eat-option">Hot tea, except not hot 3.00</p><br>
+          
+            <h5>Soda</h5>
+            <p class="eat-option">Coke, Sprite, Fanta, etc. 2.50</p>
+          </div> 
+          --> 
+          <img src="Images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+        </div>
+      </div>
+     
+      <div class="cafe-contianer" id="where" 
+        style="padding-bottom: 32px;">
+        <div class="cafe-contents"  
+          style="max-width: 700px;">
+          <h5 class="cafe-header">
+            <span class="cafe-header-content">WHERE TO FIND US
+            </span>  
+          </h5>
+          <p>
+            Find us at some address at some place.
+          </p>
+          <img src="Images/map.jpg" class="map-img" style="width: 100%;">
+          <p>
+            <span class="cafe-header-content">FYI!</span>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.
+          </p>
+          <p>
+            <strong>Reserve</strong> a table, ask for today's special or just send us a message:
+          </p>
+          <div>
+            <p>
+              <input type="text" placeholder="Name" required="" name="Name" class="cafe-input">
+            </p>
+            <p>
+              <input type="text" placeholder="How many people" class="cafe-input">
+            </p>
+            <p>
+              <input type="datetime-local" placeholder="Date and Time" required name="date" value="2024-04-16T13:00" class="cafe-input">
+            </p>
+            <p>
+              <input type="text" placeholder="How many people" class="cafe-input">
+            </p>
+            <p>
+              <button>SEND MESSAGE</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer-content">
+      <p>
+        Powered by
+        <a href="#" class="footer-bg">DevTim</a>
+      </p>
+    </footer>
+    <script src="Script/cafe-Template.js"></script>
+  </body>
+</html>
